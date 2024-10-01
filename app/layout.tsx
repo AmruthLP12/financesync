@@ -12,8 +12,8 @@ const ibmPlexSerif = IBM_Plex_Serif({
 })
 
 export const metadata: Metadata = {
-  title: "FinanceSync",
-  description: "FinanceSync is a modern banking platform for everyone.",
+  title: "Trezar",
+  description: "Trezar is a modern banking platform for everyone.",
   icons: {
     icon: '/icons/logo.svg'
   }
