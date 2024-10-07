@@ -1,8 +1,7 @@
-import { headers } from "next/headers";
-import { Configuration, PlaidApi, PlaidEnvironments } from "plaid";
+import { Configuration, PlaidApi } from "plaid";
 
 const configuration = new Configuration({
-  basePath: PlaidEnvironments.sandbox,
+  basePath: "https://sandbox.plaid.com", // Use the sandbox URL as a string
   baseOptions: {
     headers: {
       "PLAID-CLIENT-ID": process.env.PLAID_CLIENT_ID,
@@ -10,4 +9,5 @@ const configuration = new Configuration({
     },
   },
 });
+
 export const plaidClient = new PlaidApi(configuration);
